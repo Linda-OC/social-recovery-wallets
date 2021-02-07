@@ -58,7 +58,7 @@ The Guardian wallet is an Ethereum-based smart contract wallet that enables user
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-The team at Alkemy decided to explore the use of a defi protocol to help come up with a solution for a non-defi, real world problem.  The problem - losing access to your money forever because you forgot the password and lost the seed phrase. Our solution - split, encrypt, and distribute pieces of the seed phrase to randomly selected, anonymous members of the application.  These members, known as "Guardians" will store the piece of information until the "Owner" of the seed phrase requests to recover their seed phrase.   
+The team at Alkemy decided to explore the use of a defi protocol to help come up with a solution for a non-defi, real world problem.  The problem - losing access to your money forever because you forgot the password and lost the seed phrase. Our solution - split, encrypt, and distribute pieces of the seed phrase to randomly selected, anonymous members of the application.  These members, known as "Guardians" will store the piece of information until the "Owner" of the seed phrase requests to recover their seed phrase.
 
 ### Built With
 
@@ -86,23 +86,50 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+* Upgrade npm
   ```sh
-  npm install npm@latest -g
+  $nvm install node
+  $node -v
+  v15.6.0
   ```
 
 ### Installation
 
-1. Clone the repo
+* Clone the repo
    ```sh
    git clone https://https://github.com/EthBuilders/social-recovery-wallets.git
    ```
-2. Install NPM packages
+* Install create-react-app
    ```sh
-   npm install
+    $npx create-react-app soc-rec-wallets
+    create src folder, node_modules and package.json
    ```
-
+* Smoke Test React
+   ```sh
+    $cd soc-rec-wallets 
+    $npm run start
+   ```
+* Add dependencies to package.json
+   ```sh
+    "@truffle/hdwallet-provider": "1.1.0", 
+    "babel-polyfill": "6.26.0", 
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bootstrap": "4.5.2",
+    "chai": "4.2.0", 
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "dotenv": "8.2.0", 
+    "rimble-ui": "^0.14.0",
+    "styled-components": "^5.2.1",
+    "truffle": "5.1.45",
+    "truffle-flattener": "1.5.0",
+    "truffle-hdwallet-provider-privkey": "0.3.0",
+    "web3": "1.2.6" 
+   ```
 
 
 <!-- ROADMAP -->
@@ -129,24 +156,6 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the [MIT License](https://github.com/EthBuilders/social-recovery-wallets/blob/master/LICENSE.txt) for more information.
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Project Link: [https://github.com/EthBuilders/social-recovery-wallets.git](https://github.com/EthBuilders/social-recovery-wallets)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-<!-- ## Acknowledgements
-
-* []()
-* []()
-* []() -->
-
-
 
 
 
